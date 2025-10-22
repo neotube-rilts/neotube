@@ -17,7 +17,7 @@
                      {#each boards as board}
                      <li><a href={`/board/${board.slug}`}>{board.name}</a></li>
                      {/each}
-					<li><a>마이페이지</a></li>
+					<li><a href="/user">마이페이지</a></li>
 				</ul>
 			</div>
 		</div>
