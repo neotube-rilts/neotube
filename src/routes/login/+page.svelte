@@ -1,5 +1,8 @@
 <!-- src/routes/login/+page.svelte -->
 <script>
+  import { loginWith } from '$lib/auth/socialLogin';
+  import { handleAuthResult } from '$lib/auth/handleAuthResult';
+  import { goto } from '$app/navigation';
   /*
   let email = '';
   let password = '';
@@ -34,6 +37,17 @@
   function loginWithKakao() {
     // TODO: Firebase Kakao 로그인 연동
     console.log('Kakao 로그인 실행');
+  }
+  async function login(provider) {
+    try {
+      const firebaseUser = await loginWith(provider);
+      if (firebaseUser) {
+        await handleAuthResult(firebaseUser);
+        goto('/user');
+      }
+    } catch (e) {
+      console.error('로그인 실패:', e);
+    }
   }
 </script>
 
@@ -89,7 +103,7 @@
       Kakao로 로그인
     </button>
     <button
-      on:click={loginWithGoogle}
+      on:click={() => login('google')}
       class="w-full flex items-center justify-center bg-white border border-gray-300 rounded py-2 hover:bg-gray-100"
     >
       <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5 mr-2" />
@@ -97,7 +111,7 @@
     </button>
 
     <button
-      on:click={loginWithApple}
+      on:click={() => login('apple')}
       class="w-full flex items-center justify-center bg-black text-white rounded py-2 hover:opacity-90"
     >
       <img src="/icons/btn-apple.png" alt="Apple" class="w-5 h-5 mr-2" />
