@@ -1,0 +1,27 @@
+{
+  "id": "uid_aj23912391",
+  "email": "user@example.com",
+  "nickname": "승준이",
+  "profileImageUrl": "https://.../profile.jpg",
+  "provider": "google",
+  "createdAt": "2025-10-22T12:34:56Z",
+  "updatedAt": "2025-10-22T12:34:56Z",
+
+  "bio": "도시를 사랑하는 엔지니어 지망생",
+  "point": 42,
+  "role": "user",
+  "isBanned": false,
+  "postCount": 12,
+  "commentCount": 87,
+  "lastLoginAt": "2025-10-21T23:00:00Z",
+
+  "tags": ["QGIS", "Optimization"],
+  "followers": ["uid_abc123", "uid_xyz999"],
+  "following": [],
+  "notificationSettings": {
+    "comment": true,
+    "like": false,
+    "mention": true
+  },
+  "isVerified": true
+}
