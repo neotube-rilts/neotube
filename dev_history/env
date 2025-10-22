@@ -34,3 +34,15 @@ package.json
 }
 노드와 관련 라이브러리는 이 버전들을 기준으로 답변 부탁해
 
+
+
+
+
+
+이 데이터를 바탕으로 위에서 알려준 svelte 및 관련 라이브러리 버전을 참고 해서 
+버전에 맞는 것들을 추천하거나 샘플 작성해 주는데 
+git repository 보면 src/lib/component/Header.svelte 보면 마이페이지 있는데 
+마이페이지 링크 클릭했을 때 위 정보를 보여주는 페이지와 수정버튼을 눌러서 정보를 수정할 수 있는 
+페이지를 작성해 주고 필수 정보는 수정이 불가능하도록 하고 수정이 가능한 정보를 잘 분류해서 작성해줘 
+혹시 alert 창이나 confirm 창이 필요하면 git repository에서 참조해서 src/lib/components/AlertDialog.svelte, src/lib/components/ConfirmDialog.svelte 컴포넌트를 사용해줘 
+그리고 typescript 가 아닌 javascript 예제를 사용해 줘
