@@ -15,6 +15,9 @@ const config = {
     }),
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/neotube' : ''
+    },
+    prerender: {
+      handleUnseenRoutes: 'warn'  // 🔥 핵심!
     }
   }
 };
