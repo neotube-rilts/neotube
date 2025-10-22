@@ -1,0 +1,3 @@
+# 예: deploy.yml 내에 추가
+- name: Add .nojekyll
+  run: echo > build/.nojekyll
