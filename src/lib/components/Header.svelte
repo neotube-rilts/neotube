@@ -12,7 +12,7 @@
 			<div class="flex-none">
 				<ul class="menu menu-horizontal px-1">
 					<li><a href="/login">로그인</a></li>
-					<li><a href="/signup">회원가입</a></li>
+					<!--li><a href="/signup">회원가입</a></li-->
                     <!-- Firestore에서 가져온 boards 배열을 순회 -->
                      {#each boards as board}
                      <li><a href={`/board/${board.slug}`}>{board.name}</a></li>

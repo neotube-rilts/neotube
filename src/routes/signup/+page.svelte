@@ -77,27 +77,28 @@
 
     <!-- 소셜 회원가입 버튼 영역 -->
     <div class="flex flex-col gap-3">
+
+    <!-- 네이버 -->
+    <button class="btn btn-outline w-full flex items-center gap-2 text-black hover:bg-[#02b152]">
+        <img src="/icons/btn-naver.png" alt="Naver" class="w-5 h-5" />
+        네이버로 가입하기
+    </button>
+
+    <!-- 카카오 -->
+    <button class="btn btn-outline w-full flex items-center gap-2 text-black hover:bg-[#fada0a]">
+        <img src="/icons/btn-kakao.png" alt="Kakao" class="w-5 h-5" />
+        카카오로 가입하기
+    </button>
+
     <!-- 구글 -->
     <button class="btn btn-outline w-full flex items-center gap-2">
         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5" />
         구글로 가입하기
     </button>
 
-    <!-- 네이버 -->
-    <button class="btn btn-outline w-full flex items-center gap-2 text-black hover:bg-[#02b152]">
-        <img src="/btn-naver.png" alt="Naver" class="w-5 h-5" />
-        네이버로 가입하기
-    </button>
-
-    <!-- 카카오 -->
-    <button class="btn btn-outline w-full flex items-center gap-2 text-black hover:bg-[#fada0a]">
-        <img src="/btn-kakao.png" alt="Kakao" class="w-5 h-5" />
-        카카오로 가입하기
-    </button>
-
     <!-- Apple -->
     <button class="btn btn-outline w-full flex items-center gap-2 text-black hover:bg-gray-800">
-        <img src="/btn-apple.png" alt="Apple" class="w-5 h-5" />
+        <img src="/icons/btn-apple.png" alt="Apple" class="w-5 h-5" />
         애플로 가입하기
     </button>
     </div>
