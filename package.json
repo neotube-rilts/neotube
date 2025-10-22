@@ -8,24 +8,28 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run build && npx gh-pages -d build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.0.0", 
-    "@sveltejs/kit": "^2.5.2", 
-    "@sveltejs/vite-plugin-svelte": "^3.0.0", 
-    "@tailwindcss/forms": "^0.5.7", 
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.5.2",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38", 
-    "daisyui": "^4.12.10", 
+    "daisyui": "^4.12.10",
     "eslint": "^8.57.0",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.38",
+    "svelte": "^4.2.20",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.5.4",
-    "svelte": "^4.2.20", 
-    "tailwindcss": "^3.4.4", 
-    "vite": "^5.3.5" 
+    "vite": "^5.3.5"
+  },
+  "dependencies": {
+    "firebase": "^10.14.1"
   }
 }

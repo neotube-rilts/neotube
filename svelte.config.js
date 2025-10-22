@@ -1,16 +1,22 @@
-// svelte.config.js svelte.config.js
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    // Svelte 4 호환성을 위해 vitePreprocess를 사용합니다.
-    preprocess: vitePreprocess(),
-    
-    kit: {
-        adapter: adapter()
+  preprocess: vitePreprocess(),
+
+  kit: {
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: '404.html',
+      precompress: false,
+      strict: true
+    }),
+    paths: {
+      base: process.env.NODE_ENV === 'production' ? '/neotube' : ''
     }
+  }
 };
 
 export default config;
-
