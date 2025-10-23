@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB2Vw7S00sXD6tlqeJ1Ph4UHbXC6Ojhq3c",
-  authDomain: "neotube-rilts.firebaseapp.com",
-  projectId: "neotube-rilts",
-  storageBucket: "neotube-rilts.firebasestorage.app",
-  messagingSenderId: "101233505105",
-  appId: "1:101233505105:web:f0b2d4f698fa5589e01970"
+  apiKey: "AIzaSyDZDrtTfdXckPK-8FL1s0ZF9KrVZcakknY",
+  authDomain: "neotube-board.firebaseapp.com",
+  projectId: "neotube-board",
+  storageBucket: "neotube-board.firebasestorage.app",
+  messagingSenderId: "9297352617",
+  appId: "1:9297352617:web:3fc31e9f4701304b05d6b8"
 };
 
 const app = initializeApp(firebaseConfig);
